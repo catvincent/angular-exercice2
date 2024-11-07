@@ -1,0 +1,16 @@
+
+<!-- les valeurs saisies se retrouvent dans les objets ngModel -->
+<!-- ngModel et ngValue sont disponibles via FormsModule de '@angular/forms -->
+<form>
+    <input type="text" pattern="[0-9]*" size="6" name="memberOne" [(ngModel)]="inputMemberOne" placeholder="0" />
+    <select  [(ngModel)]="selectedOperator" name="operators">
+       <option name="op1" [ngValue]="operatorPlus">{{ operatorPlus }}</option>
+       <option name="op2" [ngValue]="operatorMoins">{{ operatorMoins }}</option>
+       <option name="op3" [ngValue]="operatorMultiply">{{ operatorMultiply }}</option>
+       <option name="op4" [ngValue]="operatorDivide">{{ operatorDivide }}</option>
+    </select>        
+    <input type="text" pattern="[0-9]*" size="6" name="memberTwo" [(ngModel)]="inputMemberTwo" placeholder="0" />
+    <button (click)="calculate()">=</button>
+</form>
+
+<p class="result">{{ calculResult }}</p>

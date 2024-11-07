@@ -1,0 +1,45 @@
+form {
+    width: 100%;
+    margin-top: 5%;
+}
+
+select {
+    margin-left: 8%;
+    padding: 10px;
+} 
+
+input[type="text"] {
+  border: solid 1px black;
+  padding: 10px;
+  border-radius: 3px;
+  margin-left: 8%;
+}
+
+button {
+  border: solid 1px black;
+  padding: 10px;
+  border-radius: 3px;
+  margin-left: 8%;
+}
+
+.result {
+  font-size: 30px;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  color: black;
+  margin-top: 5%;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 650px) {
+    select {
+        margin-left: 3px;
+    } 
+    
+    input[type="text"] {
+      margin-left: 3px;
+    }
+    
+    button {
+      margin-left: 3px;
+    }
+}

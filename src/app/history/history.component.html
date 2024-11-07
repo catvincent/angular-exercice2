@@ -1,0 +1,13 @@
+<div class="pill-group">
+    <!-- liste des opérations effectuées avec option de suppression pour chacune -->
+    @for (item of histoyItems; track item.opDate) {
+      <a class="pill">
+        <span class="dateOp">{{ item.opDate | date: 'HH:mm:ss' }}</span>&nbsp;<button (click)="deleteItem(item.opDate)" title="supprimer">x</button>
+       <br>
+        <span>{{ item.firstMember }} {{ item.operator }} {{ item.secondMember }} =</span><br>
+        <span>{{ item.result }}</span>
+      </a>
+    }
+  </div>
+
+  
